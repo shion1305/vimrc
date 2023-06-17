@@ -33,4 +33,14 @@ Plug 'tpope/vim-repeat'
 Plug 'terryma/vim-expand-region'
 Plug 'tpope/vim-surround'
 Plug 'cohama/lexima.vim'
+Plug 'folke/tokyonight.nvim'
+Plug 'rust-lang/rust.vim'
 call plug#end()
+colorscheme tokyonight-moon
+
+"サイドバーにフォルダを展開するショートカット作成
+" Ctrl+nでファイルツリーを表示/非表示する
+nnoremap <silent><C-n> :Fern . -reveal=% -drawer -toggle -width=30<CR>
+let g:fern#default_hidden=1 " 隠しファイルを表示する
+let g:fern#renderer = 'nerdfont'
+let g:fern#renderer#nerdfont#indent_markers = 1
