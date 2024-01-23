@@ -33,10 +33,8 @@ Plug 'tpope/vim-repeat'
 Plug 'terryma/vim-expand-region'
 Plug 'tpope/vim-surround'
 Plug 'cohama/lexima.vim'
-Plug 'folke/tokyonight.nvim'
 Plug 'rust-lang/rust.vim'
 call plug#end()
-colorscheme tokyonight-moon
 
 "サイドバーにフォルダを展開するショートカット作成
 " Ctrl+nでファイルツリーを表示/非表示する
